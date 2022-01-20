@@ -1,6 +1,6 @@
 import csv
 
-# Our main variables for analyis:
+# Our main variables for analysis:
 
 age = []
 sex = []
