@@ -108,8 +108,7 @@ mode_info = mode(region, smoker_status, sex)
 print(mode_info)
 
 # In-depth statistics variable by variable
-def cross_sect_stats(int_age, sex, float_bmi, int_num_of_children, smoker_status, region, float_charges):
-    pass
+
 
 
 
@@ -122,13 +121,18 @@ def dataset_dict(int_age, sex, float_bmi, int_num_of_children, smoker_status, re
         medical_combo = list(zip(dict_categories, stat))
         medical_dict = dict(medical_combo)
         print(medical_dict)
- 
-        
+
 
 medical_dictionary = dataset_dict(int_age, sex, float_bmi, int_num_of_children, smoker_status, region, float_charges)
 print(medical_dictionary)
 
+def cross_sect_stats(medical_dictionary):
+    print(medical_dictionary)
+
+
 # This creates a dictionary of a user's medical information. 
+
+in_depth_stats = cross_sect_stats(medical_dictionary)
 
 class MedicalHistory: 
     def __init__(self, name, age, sex, bmi, num_of_children, smoker_status, region, charges):
