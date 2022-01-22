@@ -107,11 +107,6 @@ def mode(region, smoker_status, sex):
 mode_info = mode(region, smoker_status, sex)
 print(mode_info)
 
-# In-depth statistics variable by variable
-
-
-
-
 # This creates a dictionary of each entry in the CSV file.
 
 def dataset_dict(int_age, sex, float_bmi, int_num_of_children, smoker_status, region, float_charges): 
@@ -120,19 +115,12 @@ def dataset_dict(int_age, sex, float_bmi, int_num_of_children, smoker_status, re
     for stat in medical_data: 
         medical_combo = list(zip(dict_categories, stat))
         medical_dict = dict(medical_combo)
-        print(medical_dict)
-
+        
 
 medical_dictionary = dataset_dict(int_age, sex, float_bmi, int_num_of_children, smoker_status, region, float_charges)
-print(medical_dictionary)
-
-def cross_sect_stats(medical_dictionary):
-    print(medical_dictionary)
 
 
 # This creates a dictionary of a user's medical information. 
-
-in_depth_stats = cross_sect_stats(medical_dictionary)
 
 class MedicalHistory: 
     def __init__(self, name, age, sex, bmi, num_of_children, smoker_status, region, charges):
@@ -148,3 +136,7 @@ class MedicalHistory:
     def dict(self): 
         medical_dict = {"Name": self.name, "Age": self.age, "BMI": self.bmi, "Number of Children": self.num_of_children, "Smoker Status": self.smoker_status, "Region": self.region, "Cost": self.charges}
         return medical_dict
+
+
+concluding_statement = "This project takes a look at statistics presented in a dataset of medical insurance clients. It examined various variables such as age, sex, BMI, the number of children that one has, whether they smoke or not, and costs for one's health insurance. One must explore the validity of BMI and the role that it plays in healthcare and healthcare interactions, as well as the other variables listed." 
+print(concluding_statement)
