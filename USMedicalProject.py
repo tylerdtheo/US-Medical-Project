@@ -45,7 +45,7 @@ float_charges = []
 for cost in charges: 
     float_charges.append(float(cost))
 
-# Statistics about the data such as mean, minimum and maximum values, etc. 
+# Summary statistics about the data such as mean, minimum and maximum values, etc. 
 
 def general_stats(int_age): 
     num_of_clients = len(age)
@@ -136,7 +136,6 @@ class MedicalHistory:
     def dict(self): 
         medical_dict = {"Name": self.name, "Age": self.age, "BMI": self.bmi, "Number of Children": self.num_of_children, "Smoker Status": self.smoker_status, "Region": self.region, "Cost": self.charges}
         return medical_dict
-
 
 concluding_statement = "This project takes a look at statistics presented in a dataset of medical insurance clients. It examined various variables such as age, sex, BMI, the number of children that one has, whether they smoke or not, and costs for one's health insurance. One must explore the validity of BMI and the role that it plays in healthcare and healthcare interactions, as well as the other variables listed." 
 print(concluding_statement)
